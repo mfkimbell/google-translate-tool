@@ -40,7 +40,6 @@ func main() {
 
 	strChan := make(chan string)
 
-
 	//wg add, adds a counter, done reduces by 1 and wait waits for it to hit 0
 
 	wg.Add(1)
