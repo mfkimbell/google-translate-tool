@@ -12,4 +12,5 @@ Here is the output with no flags:
 <img width="606" alt="Screenshot 2023-11-21 at 5 13 00 PM" src="https://github.com/mfkimbell/google-translate-tool/assets/107063397/eb1c4960-0783-4e28-9d06-f1b09d820268">
 
 Here is the output with correct flags:
+
 <img width="376" alt="Screenshot 2023-11-21 at 5 15 17 PM" src="https://github.com/mfkimbell/google-translate-tool/assets/107063397/bc9fb26b-3ea6-4419-b606-d0ec533eee75">
