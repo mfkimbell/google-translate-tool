@@ -38,11 +38,11 @@ func main() {
 		os.Exit(1)
 	}
 
-	strChan := make(chan string)
+	strChan := make(chan string) //this is the channel
 
 	//wg add, adds a counter, done reduces by 1 and wait waits for it to hit 0
 
-	wg.Add(1)
+	wg.Add(1) //ADD go cli.RequestTranslate
 
 	reqBody := &cli.RequestBody{
 		SourceLang: sourceLang,
@@ -50,12 +50,12 @@ func main() {
 		SourceText: sourceText,
 	}
 
-	go cli.RequestTranslate(reqBody, strChan, &wg)
+	go cli.RequestTranslate(reqBody, strChan, &wg) //go keyword makes it a go routine
 
-	processedStr := strings.ReplaceAll(<-strChan, " + ", " ")
+	processedStr := strings.ReplaceAll(<-strChan, " + ", " ") //replace the + in the channel
 
 	fmt.Printf("%s\n", processedStr)
 
 	close(strChan)
-	wg.Wait()
+	wg.Wait() //WAIT ON go cli.RequestTranslate
 }
