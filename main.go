@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/mfkimbell/google-translate-tool/cli"
+	"github.com/mfkimbell/google-translate-project/cli"
 )
 
 var wg sync.WaitGroup
@@ -32,7 +32,6 @@ func main() {
 
 	if flag.NFlag() == 0 {
 		//if zero flags have been set, we will show the usage options
-		fmt.Printf("Usage: %s [options]\n", os.Args[0])
 		fmt.Println("Options:")
 		flag.PrintDefaults()
 		os.Exit(1)
