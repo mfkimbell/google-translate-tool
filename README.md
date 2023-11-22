@@ -13,4 +13,4 @@ Here is the output with no flags:
 
 Here is the output with correct flags:
 
-<img width="376" alt="Screenshot 2023-11-21 at 5 15 17 PM" src="https://github.com/mfkimbell/google-translate-tool/assets/107063397/bc9fb26b-3ea6-4419-b606-d0ec533eee75">
+<img width="399" alt="Screenshot 2023-11-21 at 8 31 59 PM" src="https://github.com/mfkimbell/google-translate-tool/assets/107063397/7b7d6d46-c6a4-4f36-9acd-6d8b8e12c21c">
