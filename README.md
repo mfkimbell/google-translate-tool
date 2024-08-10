@@ -5,6 +5,9 @@
 * `Channels` for communication of Go Routines
 * `Wait Groups` sync mechanism that blocks code to allow for other functions to complete execution, similar to `await` keyword
 
+### Wait Groups
+We use Add() to add to wait groups, wg.Done() to decrement wait groups. We use defer wg.done() to automaticaly call wg.done() at the end of a function. 
+
 
 One thing I think is important to understand for this project is that it utilizes concurrency through Go Routines, aka tasks are always being actively worked on when there is downtime during API calls and things alike, however, there is no paralellism, such as when you have dynamically scaling worker servers/containers. 
 
